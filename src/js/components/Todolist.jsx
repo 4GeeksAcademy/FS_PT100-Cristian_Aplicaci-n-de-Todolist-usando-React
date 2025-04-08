@@ -23,7 +23,9 @@ export const Todolist = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={task} onChange={e => setTask(e.target.value)} />
+                <input type="text" value={task} onChange={e => setTask(e.target.value)} 
+                placeholder={data.length === 0 ? 'No hay tareas, añadir tareas' : 'Escribe una nueva tarea'}
+                />
             </form>
             <ul>
                 {data.map((el, i) => <li key={i}>{el}

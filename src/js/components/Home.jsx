@@ -1,8 +1,7 @@
-import React from 'react'  
+import React from 'react'
 
 //include images into your bundle
 import { Todolist } from "./Todolist.jsx"
-import {Contador } from "./Contador.jsx"
 
 
 //create your first component
@@ -12,9 +11,11 @@ const Home = () => {
 		<div className="container">
 			<h1>todos</h1>
 			<ul>
-			    <Todolist/>
+				<Todolist />
 			</ul>
-			<div className='conteo'>23 task</div>
+			<div className='conteo'>
+				23 task
+			</div>
 		</div>
 	);
 };

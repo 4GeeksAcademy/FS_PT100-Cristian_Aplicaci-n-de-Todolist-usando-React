@@ -8,9 +8,9 @@ text {
 
 }
 
-ul{
-padding: 0px;
-margin-bottom: 0px;
+ul {
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
 ul li {
@@ -29,11 +29,11 @@ input {
     width: 100%;
 }
 
-span{
+span {
     float: inline-end
 }
 
-div.conteo{
+div.conteo {
     padding: 5px;
     border: 1px solid black;
     width: 100%;
