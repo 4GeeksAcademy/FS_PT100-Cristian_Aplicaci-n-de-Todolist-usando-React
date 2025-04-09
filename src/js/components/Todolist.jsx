@@ -30,8 +30,8 @@ export const Todolist = () => {
                     <span onClick={() => handleClick(i)} className="bg-white d-flex">X</span>
                 </li>)}
             </ul>
-            <p>
-                estas son las tareas pendientes de hacer {data.length}
+            <p className="conteo">
+            {data.length} task
             </p>
         </div>
     );

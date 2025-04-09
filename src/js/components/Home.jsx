@@ -2,7 +2,6 @@ import React from 'react'
 
 //include images into your bundle
 import { Todolist } from "./Todolist.jsx"
-import { Contar } from './Contar.jsx';
 
 //create your first component
 const Home = () => {
@@ -13,9 +12,6 @@ const Home = () => {
 			<ul>
 				<Todolist />
 			</ul>
-			<div>
-				<Contar />
-			</div>
 		</div>
 	);
 };
