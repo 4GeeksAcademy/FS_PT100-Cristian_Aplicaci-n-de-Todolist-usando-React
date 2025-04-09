@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export const Contar = () => {
 
     const [count, setCount] = useState(0);
+    const [data, setData] = useState()
 
     return (
       <div>

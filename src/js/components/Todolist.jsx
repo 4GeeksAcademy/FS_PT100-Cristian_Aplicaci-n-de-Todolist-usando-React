@@ -6,13 +6,10 @@ export const Todolist = () => {
     const [data, setData] = useState([]);
     const [task, setTask] = useState('');
 
-    useEffect(() => {
-        if (data.length == 0) setData(['No hay tareas, añadir tareas'])
-    }, [])
-
     const handleSubmit = e => {
         e.preventDefault();
         setData([...data, task]);
+        setTask('')
     }
 
     const handleClick = (index) => {
@@ -21,11 +18,11 @@ export const Todolist = () => {
     }
 
     return (
-    
+
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={task} onChange={e => setTask(e.target.value)} 
-                placeholder={data.length === 0 ? 'No hay tareas, añadir tareas' : 'Escribe una nueva tarea'}
+                <input type="text" value={task} onChange={e => setTask(e.target.value)}
+                    placeholder={data.length === 0 ? 'No hay tareas, añadir tareas' : 'Escribe una nueva tarea'}
                 />
             </form>
             <ul>
@@ -33,6 +30,9 @@ export const Todolist = () => {
                     <span onClick={() => handleClick(i)} className="bg-white d-flex">X</span>
                 </li>)}
             </ul>
+            <p>
+                estas son las tareas pendientes de hacer {data.length}
+            </p>
         </div>
-    )
-}
+    );
+};
