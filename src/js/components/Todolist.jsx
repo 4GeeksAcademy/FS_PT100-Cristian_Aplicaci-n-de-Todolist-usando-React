@@ -26,8 +26,8 @@ export const Todolist = () => {
                 />
             </form>
             <ul>
-                {data.map((el, i) => <li key={i}>{el}
-                    <span onClick={() => handleClick(i)} className="bg-white d-flex">X</span>
+                {data.map((el, i) => <li key={i} className="task-item">{el}
+                    <span onClick={() => handleClick(i)} className="delete-btn">X</span>
                 </li>)}
             </ul>
             <p className="conteo">
